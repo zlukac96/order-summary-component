@@ -1,0 +1,145 @@
+:root {
+	/*Primary*/
+	--paleBlue: hsl(225, 100%, 94%);
+	--brightBlue: hsl(245, 75%, 52%);
+	/*Neutral*/
+	--veryPaleBlue: hsl(225, 100%, 98%);
+	--desaturatedBlue: hsl(224, 23%, 55%);
+	--darkBlue: hsl(223, 47%, 23%);
+}
+
+
+body{
+	background-color: rgb(224,232,255);
+	background-image: url("images/pattern-background-desktop.svg");
+	font-family: 'Red Hat Display', sans-serif;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+.text-container{
+	margin: auto;
+	width: 75%;
+}
+
+.order-summary{
+	margin: auto;
+	max-width: 600px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.order-summary > img{
+	width: 100%;
+	height: auto;
+}
+
+
+.order-summary h1{
+	font-weight: 900;
+	color: var(--darkBlue);
+	margin: 30px auto 20px;
+}
+
+
+.text-description{
+	margin: 0 auto 20px;
+	width: 90%;
+	color: var(--desaturatedBlue);
+}
+
+.plan-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	/*width: 75%;*/
+	margin: 0 auto 25px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: var(--veryPaleBlue);
+}
+
+.order-summary a {
+	text-decoration:none;
+}
+
+.cancel-order{
+	margin-bottom: 30px;
+}
+
+.cancel-order > a{
+	color: var(--desaturatedBlue);
+	font-weight: 700
+}
+
+.cancel-order > a:hover{
+	color: var(--darkBlue);
+}
+
+.proceed-to-pay{
+	/*width: 75%;*/
+	color: white;
+	background-color: var(--brightBlue);
+	margin: 0 auto 20px;
+	border-radius: 10px;
+	padding: 12px 0;
+}
+
+.proceed-to-pay:hover{
+	background-color: rgb(118,108,241);/*fgegrergegrergerg*/
+}
+
+.proceed-to-pay > p{
+	margin: 0;
+	font-weight: 700;
+}
+
+.plan-container > div{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.plan-container a{
+	color: var(--brightBlue);
+	text-decoration: underline;
+}
+
+.plan-container a:hover{
+	text-decoration: none;
+}
+
+.plan-text > p{
+	margin: 5px 0 5px 20px;
+}
+
+.plan-text > p:first-child{
+	font-weight: 900;
+	color: var(--darkBlue);
+}
+
+.plan-text > p:last-child{
+	color: var(--desaturatedBlue);
+}
+
+
+@media screen and (max-width: 400px) {
+	.text-container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.plan-container{
+		display:block;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	body{
+		font-size: 20px;
+	}
+}
